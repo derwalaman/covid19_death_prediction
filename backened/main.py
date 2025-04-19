@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 import uvicorn
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
