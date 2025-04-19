@@ -41,7 +41,7 @@ def home():
     return {"message": "COVID-19 Death Prediction API is running."}
 
 # Helper to load data
-def read_data_from_csv(file_path="../dataset/WHO-COVID-19-global-daily-data.csv"):
+def read_data_from_csv(file_path="dataset/WHO-COVID-19-global-daily-data.csv"):
     return pd.read_csv(file_path)
 
 # Y-axis formatter for millions
