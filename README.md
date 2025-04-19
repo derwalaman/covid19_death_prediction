@@ -5,8 +5,8 @@ An advanced full-stack machine learning application that predicts COVID-19 death
 
 ## 🚀 Live Demo
 
-🌐 [Frontend (Vercel)](https://your-frontend-link.vercel.app)  
-⚙️ [Backend (Railway)](https://your-backend-link.up.railway.app)
+🌐 [Frontend (Vercel)](https://covid19-death-prediction.vercel.app/)  
+⚙️ [Backend (Railway)](https://covid19deathprediction-production.up.railway.app)
 
 ---
 
