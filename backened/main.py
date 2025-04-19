@@ -2,7 +2,7 @@ from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
-
+import uvicorn
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -186,3 +186,7 @@ def predict(data: Features):
     features = list(data.dict().values())
     result = predict_deaths(features)
     return {"Predicted_new_deaths": round(result, 2)}
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))  # Railway sets PORT env variable
+    uvicorn.run("main:app", host="0.0.0.0", port=port)
