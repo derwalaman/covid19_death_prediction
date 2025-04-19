@@ -209,7 +209,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="text-center text-sm text-gray-400 py-6 border-t border-white/10">
-        &copy; {new Date().getFullYear()} COVID-19 Prediction Project — Designed by <a href="https://github.com/your-github-username" className="underline hover:text-white">YourName</a>
+        &copy; {new Date().getFullYear()} COVID-19 Prediction Project — Designed by <a href="https://github.com/derwalaman" className="underline hover:text-white">Aman Derwal</a>
       </footer>
 
       {/* Popup for Model Details */}
@@ -225,7 +225,7 @@ export default function Home() {
             <h3 className="text-2xl font-bold text-cyan-300 mb-4">{selectedModel}</h3>
             <p className="text-md mb-6 text-gray-300">{modelInfo[selectedModel].definition}</p>
             <div className="space-y-2 text-md text-gray-300">
-              <p><span className="text-yellow-300 font-semibold">Accuracy:</span> {modelInfo[selectedModel].accuracy}</p>
+              <p><span className="text-yellow-300 font-semibold mt-5 mb-5">Accuracy:</span> {modelInfo[selectedModel].accuracy}</p>
               <p><span className="text-pink-300 font-semibold">MSE:</span> {modelInfo[selectedModel].mse}</p>
             </div>
           </div>

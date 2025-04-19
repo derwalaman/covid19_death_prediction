@@ -92,10 +92,10 @@ uvicorn main:app --reload
 ---
 
 ## 📡 API Endpoints
-- POST /predict
+##### POST /predict
 Predict deaths based on features defined
 
-- GET /generate_graph?index=0
+##### GET /generate_graph?index=0
 Returns a base64-encoded EDA graph image (PNG) based on index.
 
 ---
