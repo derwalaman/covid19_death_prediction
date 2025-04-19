@@ -29,7 +29,7 @@ export default function VisualizationPage() {
   const fetchGraphImage = async (plotType) => {
     setLoading(true);
     try {
-      const response = await fetch(`http://localhost:8000/generate_graph?plot_type=${plotType}`);
+      const response = await fetch(`https://covid19deathprediction-production.up.railway.app/generate_graph?plot_type=${plotType}`);
       const data = await response.json();
       setImageData(data.image_data);
     } catch (error) {
